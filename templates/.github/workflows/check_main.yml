@@ -1,0 +1,13 @@
+# SPDX-FileCopyrightText: 2024 FLECS Technologies GmbH <info@flecs.tech>
+#
+# SPDX-License-Identifier: MIT
+on:
+  push:
+    branches:
+      - 'main'
+  pull_request:
+    branches:
+      - 'main'
+jobs:
+  check:
+    uses: FLECS-Technologies/actions-rs/.github/workflows/check.yml@main
