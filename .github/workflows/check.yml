@@ -1,6 +1,8 @@
 # SPDX-FileCopyrightText: 2024 FLECS Technologies GmbH <info@flecs.tech>
 #
 # SPDX-License-Identifier: MIT
+name: Checks the rust source code of the project. This includes format, linting, unit tests, compiling, code coverage and documentation.
+run-name: Check ${{ github.repository }} at ${{ github.ref_name }}
 on:
   workflow_call:
 jobs:
