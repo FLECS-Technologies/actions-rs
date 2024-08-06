@@ -11,6 +11,8 @@ jobs:
     container: flecspublic.azurecr.io/flecs-build:latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          submodules: recursive
       - name: Build project
         run: cargo build --all-targets --all-features --locked
       - name: Validate code format
