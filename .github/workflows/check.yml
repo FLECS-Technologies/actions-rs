@@ -5,10 +5,14 @@ name: Checks the rust source code of the project. This includes format, linting,
 run-name: Check ${{ github.repository }} at ${{ github.ref_name }}
 on:
   workflow_call:
+    inputs:
+      flecs_build_ref:
+        default: latest
+        type: string
 jobs:
   check:
     runs-on: ubuntu-latest
-    container: flecspublic.azurecr.io/flecs-build:latest
+    container: flecspublic.azurecr.io/flecs-build:${{ inputs.flecs_build_ref }}
     steps:
       - uses: actions/checkout@v4
         with:
