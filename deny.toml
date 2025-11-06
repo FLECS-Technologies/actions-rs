@@ -88,6 +88,7 @@ ignore = [
 allow = [
     "MIT",
     "Apache-2.0",
+    "ISC",
     "Unicode-DFS-2016",
     "BSD-3-Clause",
     "Unicode-3.0",
@@ -105,6 +106,7 @@ exceptions = [
     # Each entry is the crate and version constraint, and its specific allow
     # list
     #{ allow = ["Zlib"], crate = "adler32" },
+    { allow = ["CC0-1.0"], crate = "tiny-keccak" }
 ]
 
 # Some crates don't have (easily) machine readable licensing information,
