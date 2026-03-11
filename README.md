@@ -1,8 +1,4 @@
-<!--
-SPDX-FileCopyrightText: 2024 FLECS Technologies GmbH <info@flecs.tech>
+# ⚠️ Deprecation Notice
 
-SPDX-License-Identifier: MIT
--->
-
-# actions-rs
-Collection of reusable workflows for rust projects
+This repository is no longer maintained and has been archived.
+Development continues at [git.flecs.tech](https://git.flecs.tech/flecs/actions-rs).
